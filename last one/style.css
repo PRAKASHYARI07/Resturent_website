@@ -1,0 +1,426 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: rgb(39, 43, 40);
+}
+
+/* Style the header with logo and navigation bar */
+header {
+    background-color: #ced6ce;
+    width: 100%;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border: 1px solid white;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: #433a3a;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+  color: rgb(79, 205, 57);
+}
+
+/* Style home content */
+.home-content {
+    height: 290px;
+  background-image: url(images/bgimage.jpg);
+  background-size: cover;
+  padding: 120px 0;
+    text-align: center;
+    width: 100%;
+ margin-bottom: 20px
+   
+}
+
+.home-content h2 {
+    color: #ffffff;
+    font-size: 4vw;
+}
+.home-content p{
+    color: white;
+    font-size: 20px;
+}
+.home-content button{
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 60px;
+    font-family: sans-serif;
+    background: rgb(156, 198, 225);
+    color: rgb(18, 15, 15);
+    font-weight: bold;
+    border: none;
+}
+
+        /* about us  */
+
+
+        .about-us {
+            background-color: #c7c19e; /* Background color: Gold */
+            color: #333; /* Text color: Dark Gray */
+            padding: 50px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .about-content {
+            max-width: 910px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333; /* Text color: Dark Gray */
+        }
+        
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #555; /* Text color: Light Gray */
+        }
+
+
+
+
+
+
+
+
+
+        /* MENU CSS */
+        .menu h1{
+            text-align: center;
+            align-items: center;
+            font-size: 4vw;
+            display: block;
+            writing-mode: vertical-rl;
+            letter-spacing:66px;
+        }
+
+ .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            padding: 20px;
+            background-color: #d2c8d0;
+        }
+       
+  .menu-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            flex: 1;
+            max-width: 300px;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+        
+  .menu-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .menu-item img :hover{
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+        
+ .menu-item h3 {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+        
+    .menu-item p {
+            margin-top: 5px;
+            font-size: 1.1rem;
+            color: #333;
+        }
+        
+        /* Different restaurant types */
+    .dinner {
+            background-color: #ffdb58; /* Yellow */
+        }
+        
+     .dessert {
+            background-color: #ff7f50; /* Coral */
+        }
+        
+    .breakfast {
+            background-color: #87ceeb; /* Sky Blue */
+        }
+        
+     .lunch {
+            background-color: #98fb98; /* Pale Green */
+        }
+        
+        /* Hover effect */
+     .menu-item:hover {
+            transform: scale(1.05);
+        }
+        
+     @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+
+
+
+/*  contact us form */
+
+.container {
+     width:100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #c07a7a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.container .main-part{
+    width: 70%;
+    background: #b1adad;
+    padding: 30px 50px ;
+    height: auto;
+    align-items: center;
+    margin: 0 130px;
+    margin-bottom: 30px;
+    display: block;
+    border-radius: 10px;
+}
+
+ .container h1 {
+    text-align: center;
+    color: #191414;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+ .container button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+   text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Style reservation form */
+.reservation {
+    margin-top: 20px;
+    padding: 5px 10px;
+    /* background-image: url(images/10.jpg); */
+    background-color: #555;
+    background-size: cover;
+    margin-bottom: 20px;
+    width: 100%;
+    
+    
+   
+}
+
+.reservation h2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 40PX;
+    
+}
+
+.reservation p {
+    color: #f1f1f1;
+    font-size: 14px;
+    text-align: center;
+    
+}
+ .reservation .cover{
+    width: 70%;
+    background: #b1adad;
+    padding: 30px 50px ;
+    height: auto;
+    align-items: center;
+    margin: 0 130px;
+    margin-bottom: 30px;
+    display: block;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+/* Style gallery images */
+
+.conatiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+    width: 100%;
+    height: 100px;
+   
+  
+}
+.container .heading{
+ width: 100%;
+ padding-bottom: 50px;
+}
+.container .heading h3{
+font-size: 3rem;
+font-weight: bolder;
+padding-bottom: 10px;
+border-bottom: 3px solid #222; 
+text-align: center;
+}
+.container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+.container .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+
+}
+.container .box .dream img {
+    width: 100%;
+    padding-bottom: 20px;
+    border-radius: 4px;
+}
+.container .box .dream img:hover{
+    transform: scale(1.05);
+}
+.container .btn{
+  font-size: 15px;
+    background: #597b6b;
+ text-align: center;
+ width: 15%;
+ padding: 10px 15px;
+ margin: 0 40%;
+}
+.container .btn a{
+    color: rgb(167, 125, 125);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+  
+}
+.container .btn a:hover{
+color: green;
+}
+
+
+/* Style the footer */
+
+.restaurant-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 20px;
+    text-align: center;
+    
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
+
+.footer-section p {
+    font-size: 16px;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.social-icon {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    margin: 0;
+}

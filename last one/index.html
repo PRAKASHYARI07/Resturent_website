@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Foodie Delight - Restaurant</title>
+</head>
+<body>
+    <!-- Header with Logo and Navigation Bar -->
+    <header>
+      <h2>Foodie Delight</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact us.html">Contact Us</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Content -->
+    <div class="home-content">
+        <h2>Welcome to Foodie Delight</h2>
+        <p>Discover the finest flavors from around the world.</p>
+        <button>BOOK NOW</button>
+        <button>SIGN IN</button>
+    </div>
+        <!-- about us -->
+        <div class="about-us">
+            <div class="about-content">
+                <h1>About Us</h1>
+                <p>Welcome to Foodie Delight, where passion meets flavor! Our journey began with a simple idea: to create memorable dining experiences that delight your senses.</p>
+                <p>Our commitment to using fresh, locally-sourced ingredients ensures that every dish we serve is bursting with flavor. From our chefs to our friendly staff, everyone at Foodie Delight is dedicated to providing you with exceptional service and a warm, inviting atmosphere.</p>
+                <p>Join us on this culinary adventure as we explore a world of flavors, from classic comfort food to exotic delights. Whether you're here for a special occasion or a casual meal, we look forward to sharing our love for food with you.</p>
+            </div>
+        </div>
+
+    <!-- Menu -->
+    <div class="menu">
+        <h1>MENU</h1>
+            <!-- breakfast -->
+
+        <div class="menu-item dinner">
+            <h2>BREAKFAST</h2>
+            <img src="images/break.png" alt="Item 1">
+            <h3>Item 1</h3>
+            <p>$10</p>
+            <img src="images/bre.jpg" alt="Item 1">
+            <h3>Item 1</h3>
+            <p>$10</p>
+        </div>
+              <!-- LAUNCH -->
+
+        <div class="menu-item dessert">
+            <h2>LAUNCH</h2>
+            <img src="images/brea.jpg" alt="Item 2">
+            <h3>Item 2</h3>
+            <p>$15</p>
+            <img src="images/break.png" alt="Item 2">
+            <h3>Item 2</h3>
+            <p>$15</p>
+        </div>
+              <!-- DESSERTS -->
+
+        <div class="menu-item breakfast">
+            <H2>DESSERTS</H2>
+            <img src="images/bre.jpg" alt="Item 3">
+            <h3>Item 3</h3>
+            <p>$12</p>
+            <img src="images/bre.jpg" alt="Item 3">
+            <h3>Item 3</h3>
+            <p>$12</p>
+        </div>
+             <!-- DRINKS -->
+        <div class="menu-item lunch">
+            <H2>DRINKS</H2>
+            <img src="images/break.png" alt="Item 4">
+            <h3>Item 4</h3>
+            <p>$18</p>
+            <img src="images/brea.jpg" alt="Item 4">
+            <h3>Item 4</h3>
+            <p>$18</p>
+        </div>
+        <!-- Add more menu items and categories as needed -->
+    </div>
+    <!-- Contact Us -->
+    <div class="container">
+        <h1>Contact Us</h1>
+       <div class="main-part">
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+       </div>
+        
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <!-- Reservation -->
+    <div class="reservation">
+        <h2>Reservation</h2>
+        <p>Make a reservation using the form below:</p>
+        <div class="cover">
+            <form action="reservation.php" method="post">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required><br>
+    
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required><br>
+    
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" required><br>
+                 
+                <label for="name"> First Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="name"> Last  Name:</label>
+                <input type="text" id="name" name="name" required><br>
+    
+                <label for="name"> Email:</label>
+                <input type="text" id="name" name="name" required><br>
+                 
+                <label for="name"> Phone:</label>
+                <input type="text" id="name" name="name" required><br>
+    
+              <button>Book Now</button>
+            </form>
+        </div>
+       
+    </div>
+
+    <!-- Gallery -->
+    <div class="container">
+        <div class="heading">
+            <h3>GALLERY</h3>
+
+        </div>
+        <div class="box">
+            <div class="dream">
+                <img src="images/1.jpeg" >
+                <img src="images/2.webp" > 
+                <img src="images/10.jpg" >
+                <img src="images/3.webp" >
+                <img src="images/4.jpg" >
+                <img src="images/6.jpg" >
+            </div>
+            <div class="dream">
+                <img src="images/7.jpg" >
+                <img src="images/8.webp" > 
+                <img src="images/9.webp" >
+                <img src="images/11.jpg" >
+                <img src="images/12.jpg" >
+                <img src="images/13.jpg" >
+            </div>
+            <div class="dream">
+                <img src="images/14.jpg" >
+                <img src="images/16.jpg" > 
+                <img src="images/16.jpg" >
+                <img src="images/17.jpg" >
+                <img src="images/18.webp" >
+                <img src="images/19.jpg" >
+            </div>
+        </div>
+        <div class="btn">
+            <a href="#">More</a>
+        </div>
+    </div>
+</body>
+<!-- Footer -->
+<footer class="restaurant-footer">
+    <div class="footer-content">
+        <div class="footer-section contact-info">
+            <h3>Contact Us</h3>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> foodiedelight@foodiedelight.com</p>
+        </div>
+        <div class="footer-section address">
+            <h3>Address</h3>
+            <p>1234 Foodie Street</p>
+            <p>Your City, State ZIP</p>
+        </div>
+        <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 Foodie Delight Restaurant</p>
+    </div>
+</footer>
+
+</html>

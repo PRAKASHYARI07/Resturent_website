@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>reservation</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <header>
+            <div class="logo">
+                <img src="images/logo.png" alt="Foodie Delight Logo">
+              
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="reservation">
+            <h2>Reservation</h2>
+            <p>Make a reservation using the form below:</p>
+            <form action="reservation.php" method="post">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required><br>
+    
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required><br>
+    
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" required><br>
+                 
+                <label for="name"> First Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="name"> Last  Name:</label>
+                <input type="text" id="name" name="name" required><br>
+    
+                <label for="name"> Email:</label>
+                <input type="text" id="name" name="name" required><br>
+                 
+                <label for="name"> Phone:</label>
+                <input type="text" id="name" name="name" required><br>
+    
+              <button>Book Now</button>
+            </form>
+      
+</body>
+</html>
